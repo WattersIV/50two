@@ -6,11 +6,13 @@ html {
   overflow-y: scroll;
 }
 :root {
-  --darkGreen: #373D20;
-  --lightGreen: #717744;
-  --brown: #ABAC7F;
-  --white: #FEFEFE;
-  --black: #080808;
+  --darkGreen: rgb(55,61,32);
+  --lightGreen: rgb(113,119,68);
+  --brown: rgb(171,172,127);
+  --white: rgb(254,254,254);
+  --black: rgb(8,8,8);
+  --lightGreenRGB: 113,119,68;
+  --darkGreenRGB: 55,61,32;
 }
 body {
   margin: 0;
