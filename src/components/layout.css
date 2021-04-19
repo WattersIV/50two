@@ -5,6 +5,13 @@ html {
   box-sizing: border-box;
   overflow-y: scroll;
 }
+:root {
+  --darkGreen: #373D20;
+  --lightGreen: #717744;
+  --brown: #ABAC7F;
+  --white: #FEFEFE;
+  --black: #080808;
+}
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
