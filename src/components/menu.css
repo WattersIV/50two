@@ -1,0 +1,48 @@
+main {
+  text-align: center;
+  background-color: var(--white);
+  position: relative;
+  width: 100%;
+  margin-top: 5vh;
+}
+
+.menu-wrapper {
+  max-width: 1200px;
+  position: relative;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.index {
+  background-color: var(--darkGreen);
+  height: fit-content;
+  text-decoration: none;
+  width: 100%;
+  margin-right: 15px;
+  text-align: left;
+}
+
+.section-title {
+  color: #000;
+  text-decoration: underline #000;
+}
+
+.menu {
+  background-color: var(--brown);
+  max-width: 650px;
+  width: 100%;
+  height: 100vh;
+}
+
+.menu-item {
+  padding: 24px;
+}
+
+.item-name {
+  text-align: left;
+}
+
+.item-price {
+  text-align: right;
+}
