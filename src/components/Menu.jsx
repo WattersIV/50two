@@ -6,29 +6,24 @@ export default function Menu() {
 
   return (
     <>
-    <h1 id='menu'>Our Menu</h1>
-    <div className='menu-wrapper'>
-      <div className='index'>
-        {menu.map((section) => {
-          return (
-            <Link to={`#${section.title}`}>
-              <h2 className='section-title'>{section.title}</h2>
-            </Link>
-          )
-        })}
-      </div>
+      <h1 id='menu'>Our Menu</h1>
       <div className='menu'>
         {menu.map((section) => {
           return (
             <>
-              <h3 id={`${section.title}`} className='section-title'>{section.title}</h3>
-              <div>
-                {section.items.map((item) => {
+              <div className='menu-section'>
+                <div className='raised-title'>
+                  <h2 id={`${section.title}`}>{section.title}</h2>
+                </div>
+                {section.items.map((item, index) => {
                   return (
-                    <h4 className='menu-item'>
-                      <span className='item-name'>{item.name}{' - '}</span>
-                      <span className='item-price'>{item.price}</span>
-                    </h4>
+                    <div className='menu-item' >
+                      <h3>
+                        <div className='item name-price'>{item.name}{' - '}{item.price}</div>
+                        <br />
+                        <div className='item description'>{item.description}</div>
+                      </h3>  
+                    </div>
                   )
                 })}
               </div>
@@ -36,8 +31,6 @@ export default function Menu() {
           )
         })}
       </div>
-
-    </div>
-  </>
+    </>
   )
 }
