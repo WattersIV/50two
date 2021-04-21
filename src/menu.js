@@ -17,6 +17,39 @@ export const menu = [
         name: 'Guacamole',
         price: 3.20,
         description: '4 Guacamole, lots of good stuff'
+      },
+      {
+        name: 'East Ham',
+        price: 1.32,
+        description: 'Eggplant oranges, applesauce grapes',
+      },
+      {
+        name: 'Sunshine flavour',
+        price: 10.14,
+        description: 'Loaf of bread and some wings. Your choice of sauce Honey BBQ, Mild, Hot, Ranch'
+
+      },
+      {
+        name: 'Star Leafs',
+        price: 8.21,
+        description: '8 oz of AAA steak on your choice of bread'
+      },
+      {
+        name: 'Eggy Special',
+        price: 7.63,
+        description: '2 Eggs, Your Choice Of Meat, Homefries & Toast'
+
+      },
+      {
+        name: 'Guacamole',
+        price: 3.20,
+        description: '4 Guacamole, lots of good stuff'
+      },
+      {
+        name: 'Sunshine flavour',
+        price: 10.14,
+        description: 'Loaf of bread and some wings. Your choice of sauce Honey BBQ, Mild, Hot, Ranch'
+
       }
     ]
   },
@@ -37,6 +70,22 @@ export const menu = [
         name: 'Veggie',
         price: 4.99,
         description: "Loaded with veggies. You can make it spicy too.",
+      },
+      {
+        name: 'East Ham',
+        price: 1.32,
+        description: 'Eggplant oranges, applesauce grapes',
+      },
+      {
+        name: 'Sunshine flavour',
+        price: 10.14,
+        description: 'Loaf of bread and some wings. Your choice of sauce Honey BBQ, Mild, Hot, Ranch'
+
+      },
+      {
+        name: 'Star Leafs',
+        price: 8.21,
+        description: '8 oz of AAA steak on your choice of bread'
       }
     ]
   }

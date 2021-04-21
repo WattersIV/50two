@@ -24,6 +24,10 @@ main {
   margin: 20px auto 50px;
 }
 
+.menu-section:nth-child(-n + 2) {
+  margin-top: 80px;
+}
+
 .raised-title {
   position: absolute;
   top: -80px;
@@ -51,4 +55,10 @@ main {
   flex-direction: column;
   margin: 0 20px;
   padding: 20px 0;
+  border-top: 4px solid var(--black);
+}
+
+/* Needs to scales with number of columns according to vw */
+.menu-item:nth-child(-n + 4) {
+  border-top: none;
 }
