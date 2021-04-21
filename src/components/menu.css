@@ -1,9 +1,7 @@
 main {
   text-align: center;
-  background-color: var(--brown);
   position: relative;
   width: 100%;
-  margin-top: 5vh;
 }
 
 #menu {
@@ -24,6 +22,7 @@ main {
   margin: 20px auto 50px;
 }
 
+
 .menu-section:nth-child(-n + 2) {
   margin-top: 80px;
 }
@@ -34,7 +33,7 @@ main {
   margin-bottom: -30px;
   display: flex;
   justify-content: center;
-  background-color: var(--lightGreen);
+  background-color: var(--tertiary);
   color: var(--white);
   padding: 0 35px;
   min-width: 275px;
@@ -55,10 +54,36 @@ main {
   flex-direction: column;
   margin: 0 20px;
   padding: 20px 0;
-  border-top: 4px solid var(--black);
+  border-top: 4px solid var(--secondary);
+}
+
+.menu-item h3 {
+  font-size: 18px;
+  font-weight: 700;
 }
 
 /* Needs to scales with number of columns according to vw */
 .menu-item:nth-child(-n + 4) {
   border-top: none;
+}
+
+.addon-section {
+  position: relative;
+  max-width: 1240px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: flex-start;
+  margin: 80px auto 50px;
+}
+
+#addon-box {
+  border: 8px double var(--secondary); 
+}
+
+.addon-item {
+  flex-basis: calc(33.3% - 40px);
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+  padding: 20px 0;
 }

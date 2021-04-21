@@ -90,3 +90,29 @@ export const menu = [
     ]
   }
 ]
+
+export const addons = [
+  { 
+    name: 'Peppers',
+    price: 2.99
+  },
+  {
+    name: 'Olives',
+    price: 1.20
+  },
+  { 
+    name: 'Banan',
+    price: 8.50
+  },
+  {
+    name: 'Grapes',
+    price: 3.25
+  },  { 
+    name: 'Pepperoni',
+    price: 5.99
+  },
+  {
+    name: 'Apple',
+    price: .99
+  }
+]

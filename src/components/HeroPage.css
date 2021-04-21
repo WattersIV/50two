@@ -1,5 +1,5 @@
 .header {
-  height: 95vh;
+  height: 100vh;
   background-image: linear-gradient( 
     to right bottom, 
     rgba(var(--darkGreenRGB), 0.8), 
@@ -7,7 +7,6 @@
     url(../images/Sandy.jpg);
   background-size: cover;
   background-position: center;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
 }
 
@@ -45,10 +44,6 @@
   animation-name: moveInLeft;
   animation-duration: 1s;
   animation-timing-function: ease-out;
-
-
-  /* animation-delay: 3s;
-  animation-iteration-count: 3; */
 }
 
 .heading-primary-sub {

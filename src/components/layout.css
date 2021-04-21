@@ -5,13 +5,13 @@ html {
   box-sizing: border-box;
   overflow-y: scroll;
   scroll-behavior: smooth;
+  background-color: var(--primary);
 }
 :root {
-  --darkGreen: rgb(55,61,32);
-  --lightGreen: rgb(113,119,68);
-  --brown: rgb(171,172,127);
-  --white: rgb(254,254,254);
-  --black: rgb(8,8,8);
+  --primary: #000;
+  --secondary: #fff;
+  --tertiary: #d11242;
+
   --lightGreenRGB: 113,119,68;
   --darkGreenRGB: 55,61,32;
 }
@@ -19,7 +19,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: hsla(0, 0%, 0%, 0.8);
+  color: var(--secondary);
   font-family: georgia, serif;
   font-weight: normal;
   word-wrap: break-word;

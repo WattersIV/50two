@@ -1,7 +1,6 @@
 import React from 'react'
 import './menu.css'
-import { menu } from '../menu'
-import { Link } from 'gatsby'
+import { menu, addons } from '../menu'
 export default function Menu() {
 
   return (
@@ -19,10 +18,10 @@ export default function Menu() {
                   return (
                     <div className='menu-item' >
                       <h3>
-                        <div className='item name-price'>{item.name}{' - '}{item.price}</div>
+                        <div className='item name-price'>{item.name}{' - $'}{item.price.toFixed(2)}</div>
                         <br />
                         <div className='item description'>{item.description}</div>
-                      </h3>  
+                      </h3>
                     </div>
                   )
                 })}
@@ -30,6 +29,20 @@ export default function Menu() {
             </>
           )
         })}
+        <div id='addon-box' className='addon-section'>
+          <div className='raised-title'>
+            <h2 id='addons'>Addons</h2>
+          </div>
+          {addons.map((extra) => {
+            return (
+              <div className='addon-item'>
+                <h3>
+                  <div className='item name-price'>{extra.name}{' - $'}{extra.price.toFixed(2)}</div>
+                </h3>
+              </div>
+            )
+          })}
+        </div>
       </div>
     </>
   )
