@@ -10,10 +10,12 @@ export default function Menu() {
         {menu.map((section) => {
           return (
             <>
-              <div className='menu-section'>
-                <div className='raised-title'>
+                <div className='banner'>
+                  <div className='raised-title'>
                   <h2 id={`${section.title}`}>{section.title}</h2>
                 </div>
+                </div>
+              <div className='menu-section'>
                 {section.items.map((item, index) => {
                   return (
                     <div className='menu-item' >

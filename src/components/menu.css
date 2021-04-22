@@ -27,9 +27,18 @@ main {
   margin-top: 80px;
 }
 
+.banner {
+  height: 230px;
+  width: 100vw;
+  background-image: url('../images/breakfast.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
 .raised-title {
   position: absolute;
-  top: -80px;
+  top: -20px;
   margin-bottom: -30px;
   display: flex;
   justify-content: center;
