@@ -1,6 +1,8 @@
 import React from 'react'
 import './menu.css'
 import { menu, addons } from '../menu'
+
+
 export default function Menu() {
 
   return (
@@ -31,10 +33,12 @@ export default function Menu() {
             </>
           )
         })}
-        <div id='addon-box' className='addon-section'>
+          <div className='banner'>
           <div className='raised-title'>
             <h2 id='addons'>Addons</h2>
           </div>
+          </div>
+        <div id='addon-box' className='addon-section'>
           {addons.map((extra) => {
             return (
               <div className='addon-item'>
@@ -46,6 +50,9 @@ export default function Menu() {
           })}
         </div>
       </div>
+      <section id='Store Information'>
+          <h1>Store Information</h1>
+      </section>
     </>
   )
 }

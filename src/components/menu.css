@@ -58,7 +58,7 @@ main {
 }
 
 .menu-item {
-  flex-basis: calc(33.3% - 40px);
+  flex-basis: calc(100% - 40px);
   display: flex;
   flex-direction: column;
   margin: 0 20px;
@@ -66,13 +66,14 @@ main {
   border-top: 4px solid var(--secondary);
 }
 
+
 .menu-item h3 {
   font-size: 18px;
   font-weight: 700;
 }
 
 /* Needs to scales with number of columns according to vw */
-.menu-item:nth-child(-n + 4) {
+.menu-item:nth-child(-n + 1) {
   border-top: none;
 }
 
@@ -82,17 +83,60 @@ main {
   flex-wrap: wrap;
   display: flex;
   justify-content: flex-start;
-  margin: 80px auto 50px;
-}
-
-#addon-box {
-  border: 8px double var(--secondary); 
+  margin: 20px auto 50px;
+  border: none;
 }
 
 .addon-item {
-  flex-basis: calc(33.3% - 40px);
+  flex-basis: calc(100% - 40px);
   display: flex;
   flex-direction: column;
   margin: 0 20px;
   padding: 20px 0;
+  border-top: 4px double var(--secondary);
+}
+
+.addon-item:nth-child(-n + 1) {
+  border-top: none;
+}
+
+@media (min-width: 776px) {
+  .menu-item {
+    flex-basis: calc(50% - 40px);
+  }
+
+  #addon-box {
+    border: none; 
+  }
+
+  .menu-item:nth-child(-n + 2) {
+    border-top: none;
+  }
+
+  .addon-item {
+    flex-basis: calc(50% - 40px);
+  }
+
+  .addon-item:nth-child(-n + 2) {
+    border-top: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .menu-item {
+    flex-basis: calc(33.3% - 40px);
+  }
+
+  .menu-item:nth-child(-n + 3) {
+    border-top: none;
+  }
+
+  #addon-box {
+    border: 8px double var(--secondary); 
+  }
+
+  .addon-item {
+    flex-basis: calc(33.3% - 40px);
+    border-top: none;
+  }
 }

@@ -3,7 +3,6 @@ import { Link } from 'gatsby'
 import './HeroPage.css'
 
 export default function HeroPage () {
-
   return (
     <header className="header">
     <div className="logo-box">
