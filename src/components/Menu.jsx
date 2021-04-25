@@ -50,9 +50,6 @@ export default function Menu() {
           })}
         </div>
       </div>
-      <section id='Store Information'>
-          <h1>Store Information</h1>
-      </section>
     </>
   )
 }
