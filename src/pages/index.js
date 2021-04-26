@@ -15,6 +15,7 @@ const IndexPage = () => {
     <SEO title="Home" />
     <body>
       <HeroPage />
+      <NavBar />
       <main>
         <Menu />
       </main>
