@@ -1,0 +1,10 @@
+.sidebar-wrapper {
+  background-color: var(--secondary);
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 95vw;
+  height: 100vh;
+  z-index: 10;
+}

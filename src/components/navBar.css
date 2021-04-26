@@ -5,7 +5,7 @@
   display: flex;
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   z-index: 3;
 }
 
@@ -101,3 +101,17 @@
     transform: translate(-50%, -50%);
   }
 }
+
+.nav-dropdown {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--secondary);
+  z-index: 2;
+}
+
+.nav-item {
+  color: var(--primary);
+  text-decoration: none;
+}
+

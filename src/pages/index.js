@@ -8,14 +8,16 @@ import Menu from '../components/Menu'
 import useOffScreen from '../hooks/useOffScreen'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import DropDown from "../components/DropDown"
 
 const IndexPage = () => {
+  const [navOpen, setNavOpen] = useState(false)
   return (
   <Layout>
     <SEO title="Home" />
     <body>
       <HeroPage />
-      <NavBar />
+      <NavBar setNavOpen={setNavOpen} navOpen={navOpen}/>
       <main>
         <Menu />
       </main>

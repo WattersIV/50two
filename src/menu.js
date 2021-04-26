@@ -116,3 +116,15 @@ export const addons = [
     price: .99
   }
 ]
+
+export const navItems = [
+  {
+    title: 'Breakfast',
+  },
+  {
+    title: 'Lunch',
+  },
+  {
+    title: 'Store Details',
+  },
+]
