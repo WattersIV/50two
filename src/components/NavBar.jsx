@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './navBar.css'
 import { navItems } from '../menu'
+import { Link } from 'gatsby'
 
 export default function NavBar(props) {
   const { navOpen, setNavOpen } = props
@@ -26,10 +27,17 @@ export default function NavBar(props) {
         <div className='nav-dropdown'>
           <ul>
             {navItems.map((item) => {
+              const location = 
+              item.title === 'Store Details' ? 
+              '/store-details' 
+              : `/#${item.title}`
               return (
-                <li key={`item-${item.title}`} className='nav-item'>
-                  {item.title}
-                </li>
+                <Link to={location} className='nav-item'>
+                  <li key={`item-${item.title}`} className='nav-item'>
+                    {item.title}
+                  </li>
+
+                </Link>
               )
             })}
           </ul>

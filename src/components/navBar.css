@@ -113,5 +113,7 @@
 .nav-item {
   color: var(--primary);
   text-decoration: none;
+  width: 100vw;
+  list-style-type: none;
 }
 
