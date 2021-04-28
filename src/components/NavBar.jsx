@@ -11,7 +11,8 @@ export default function NavBar(props) {
   }
   return (
     <>
-      <div 
+    {/* Check size of viewport to make Hamburger conditional conditional */}
+      <div
       id="nav-icon2"
       onClick={() => changeBurgerState()} 
       className={navOpen === true ? 'open' : ''}
@@ -43,13 +44,6 @@ export default function NavBar(props) {
           </ul>
         </div>
       )}
-      {/* <div className='nav-container'>
-        <div className='links'>
-          <h2>Breakfast</h2>
-          <h2>Lunch</h2>
-          <h2>Store Details</h2>
-        </div>
-      </div> */}
     </>
   )
 }
