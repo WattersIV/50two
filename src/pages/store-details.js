@@ -4,6 +4,7 @@ import NavBar from '../components/NavBar'
 import Map from '../components/Map'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import LocationDetails from "../components/LocationDetails"
 
 const StoreDetails = () => (
   <Layout>
@@ -12,6 +13,7 @@ const StoreDetails = () => (
     <body>
       <NavBar />
       <Map />
+      <LocationDetails />
     </body>
   </Layout>
 )
