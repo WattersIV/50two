@@ -1,5 +1,6 @@
 import React from 'react'
 import './locationDetails.css'
+import { Link } from "gatsby"
 
 export default function LocationDetails() {
   return (
@@ -20,9 +21,11 @@ export default function LocationDetails() {
           <h2>HOURS</h2>
           <h3>Monday-Friday 8am-3pm</h3>
         </div>
-      <button className='button menu-button'>
-        See Menu
-      </button>
+      <Link to='/#menu'>
+        <button className='button menu-button'>
+          See Menu
+        </button>
+      </Link>
       </div>
     </main>
   )

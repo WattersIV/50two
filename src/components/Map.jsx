@@ -5,7 +5,7 @@ const Map = () => {
 
   const mapStyles = {
     height: "300px",
-    width: "500px"
+    width: "1000px"
   };
 
   const defaultCenter = {
