@@ -55,6 +55,8 @@ main {
 
 .raised-title h2 {
   margin-bottom: 0;
+  text-transform: uppercase;
+  font-size: 15px;
 }
 
 .menu-item {
