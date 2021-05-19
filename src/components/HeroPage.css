@@ -40,7 +40,7 @@
   display: block;
   font-size: 60px;
   font-weight: 400;
-  letter-spacing: 35px;
+  letter-spacing: 15px;
 
   animation-name: moveInLeft;
   animation-duration: 1s;
@@ -51,10 +51,11 @@
   display: block;
   font-size: 20px;
   font-weight: 700;
-  letter-spacing: 17.4px;
+  letter-spacing: 8px;
   animation-name: moveInRight;
   animation-duration: 1s;
   animation-timing-function: ease-out;
+  margin-top: 5px;
 } 
 
 @keyframes moveInLeft {

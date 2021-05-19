@@ -1,0 +1,5 @@
+@media (min-width: 992px) {
+	div {
+		justify-content: flex-end;
+	}
+}

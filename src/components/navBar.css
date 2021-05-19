@@ -6,7 +6,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 3;
+  z-index: 4;
   margin-top: 5px;
   margin-right: 5px;
 }
@@ -26,7 +26,7 @@
   -moz-transition: .25s ease-in-out;
   -o-transition: .25s ease-in-out;
   transition: .25s ease-in-out;
-  z-index: 3;
+  z-index: 4;
 }
 
 #nav-icon2 span:nth-child(even) {
@@ -109,7 +109,7 @@
   top: 0;
   left: 0;
   background-color: var(--secondary);
-  z-index: 2;
+  z-index: 3;
 }
 
 .nav-item {

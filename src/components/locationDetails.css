@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -66,4 +67,14 @@ h3 {
 
 .menu-button:hover {
   background-color: var(--tertiary);
+}
+
+
+@media (min-width: 992px) {
+  main {
+    display: inline-flex;
+  }
+  .menu-button {
+    width: 80% 
+  }
 }

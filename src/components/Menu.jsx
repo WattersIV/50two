@@ -35,7 +35,7 @@ export default function Menu() {
         })}
           <div className='banner'>
           <div className='raised-title'>
-            <h2 id='addons'>Addons</h2>
+            <h2 id='Addons'>Addons</h2>
           </div>
           </div>
         <div id='addon-box' className='addon-section'>

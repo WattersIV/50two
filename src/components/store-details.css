@@ -1,0 +1,14 @@
+@media (min-width: 992px) { 
+  #store-details-body body {
+    max-width: 90vw;
+		margin: auto;
+  }	
+	.details-container {
+		display: inline-flex;
+		flex-direction: row-reverse;
+		width: 90vw;
+	}
+	.location {
+		flex: 1;
+	}
+}

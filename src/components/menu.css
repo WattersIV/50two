@@ -5,7 +5,8 @@ main {
 }
 
 #menu {
-  margin-bottom: 150px;
+  margin-bottom: 80px;
+  font-size: 35px;
 }
 
 .menu-wrapper {
@@ -141,4 +142,11 @@ main {
     flex-basis: calc(33.3% - 40px);
     border-top: none;
   }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
 }

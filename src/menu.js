@@ -124,6 +124,9 @@ export const navItems = [
   {
     title: 'Lunch',
   },
+  { 
+    title: 'Addons'
+  },
   {
     title: 'Store Details',
   },
