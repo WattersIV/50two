@@ -26,7 +26,7 @@ export default function NavBar(props) {
       </div>
       {navOpen && (
         <div className='nav-dropdown'>
-          <ul>
+          <ul style={{ marginLeft: 0 }}>
             {navItems.map((item) => {
               const location = 
               item.title === 'Store Details' ? 
