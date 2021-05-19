@@ -6,7 +6,7 @@ export default function DropDown () {
 
   return (
     <div className='dropdown-wrapper'>
-      <ul>
+      <ul style={{ marginLeft: 0 }}>
         {navItems.map((item) => {
           <h2>
             {item.title}
