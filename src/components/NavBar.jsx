@@ -10,7 +10,6 @@ export default function NavBar(props) {
   const changeBurgerState = () => {
     setNavOpen(!navOpen)
   }
-  console.log(isInViewport)
   return (
     <div ref={navRef}>
       {!isInViewport && (
