@@ -4,6 +4,7 @@ import { menu, navItems } from "../menu"
 import { Link } from "gatsby"
 import PhoneInTalkOutlinedIcon from "@material-ui/icons/PhoneInTalkOutlined"
 import MenuIcon from "@material-ui/icons/Menu"
+import ClearIcon from '@material-ui/icons/Clear';
 import useIsInViewport from "use-is-in-viewport"
 
 export default function NavBar(props) {
@@ -18,15 +19,15 @@ export default function NavBar(props) {
         <div className="navbar">
           {/* Add onclick for phone to open phone on mobile if possible
           If not possible open a dialog with phone number and hrs */}
-          {!navOpen && (
-            <>
-              <PhoneInTalkOutlinedIcon id="navbar-phone" />
-              <h1 id="nav-fifty-two">50 TWO</h1>
-              <MenuIcon
-                id="hamburger-icon"
-                onClick={() => changeBurgerState()}
-              />
-            </>
+          <PhoneInTalkOutlinedIcon id="navbar-phone" />
+          <h1 id="nav-fifty-two">50 TWO</h1>
+          {navOpen ? (
+            <ClearIcon id='nav-clear-icon' onClick={() => changeBurgerState()} />
+            ) : (
+            <MenuIcon
+              id="hamburger-icon"
+              onClick={() => changeBurgerState()}
+            />
           )}
           {navOpen && (
             <div className="nav-dropdown">

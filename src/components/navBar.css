@@ -41,6 +41,16 @@
   border: 5px solid var(--primary);
 }
 
+#nav-clear-icon {
+  height: 50px;
+  width: 50px;
+  z-index: 4;
+  grid-column: 3 / 4;
+  color: var(--primary);
+  justify-self: center;
+  align-self: center;
+}
+
 @media (min-width: 992px) {
   .links {
     position: relative;
@@ -52,7 +62,7 @@
 
 .nav-dropdown {
   position: fixed;
-  top: 0;
+  top: 65px;
   left: 0;
   background-color: var(--secondary);
   z-index: 3;
