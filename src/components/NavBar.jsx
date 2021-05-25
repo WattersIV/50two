@@ -2,6 +2,8 @@ import React, { useState } from "react"
 import "./navBar.css"
 import { menu, navItems } from "../menu"
 import { Link } from "gatsby"
+import PhoneInTalkOutlinedIcon from "@material-ui/icons/PhoneInTalkOutlined"
+import MenuIcon from "@material-ui/icons/Menu"
 import useIsInViewport from "use-is-in-viewport"
 
 export default function NavBar(props) {
@@ -13,22 +15,22 @@ export default function NavBar(props) {
   return (
     <div ref={navRef}>
       {!isInViewport && (
-        <>
-          <div
-            id="nav-icon2"
-            onClick={() => changeBurgerState()}
-            className={navOpen === true ? "open" : ""}
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+        <div className="navbar">
+          {/* Add onclick for phone to open phone on mobile if possible
+          If not possible open a dialog with phone number and hrs */}
+          {!navOpen && (
+            <>
+              <PhoneInTalkOutlinedIcon id="navbar-phone" />
+              <h1 id="nav-fifty-two">50 TWO</h1>
+              <MenuIcon
+                id="hamburger-icon"
+                onClick={() => changeBurgerState()}
+              />
+            </>
+          )}
           {navOpen && (
             <div className="nav-dropdown">
-              <ul style={{ marginLeft: 0 }}>
+              <ul style={{ margin: "15px 0 15px 0" }}>
                 {navItems.map(item => {
                   const location =
                     item.title === "Store Details"
@@ -45,7 +47,7 @@ export default function NavBar(props) {
               </ul>
             </div>
           )}
-        </>
+        </div>
       )}
     </div>
   )
