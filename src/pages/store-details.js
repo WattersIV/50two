@@ -13,12 +13,11 @@ const StoreDetails = () => {
   return (
     <Layout>
       <SEO title="Store Details" />
-      <h1>Store Details</h1>
       <body id="store-details-body">
         {size.width > 1024 ? null : (
           <NavBar setNavOpen={setNavOpen} navOpen={navOpen} />
         )}
-        <div className="details-container">
+        <div className="details-container" style={{ marginTop: 'var(--navHeight)' }} >
           <Map />
           <LocationDetails />
         </div>

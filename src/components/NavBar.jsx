@@ -5,24 +5,25 @@ import { Link } from "gatsby"
 import PhoneInTalkOutlinedIcon from "@material-ui/icons/PhoneInTalkOutlined"
 import MenuIcon from "@material-ui/icons/Menu"
 import ClearIcon from '@material-ui/icons/Clear';
-import useIsInViewport from "use-is-in-viewport"
 
 export default function NavBar(props) {
   const { navOpen, setNavOpen } = props
-  const [isInViewport, navRef] = useIsInViewport() // !isInViewport means it should be shown
   const changeBurgerState = () => {
     setNavOpen(!navOpen)
   }
   return (
-    <div ref={navRef}>
-      {!isInViewport && (
+    <div >
         <div className="navbar">
           {/* Add onclick for phone to open phone on mobile if possible
           If not possible open a dialog with phone number and hrs */}
-          <PhoneInTalkOutlinedIcon id="navbar-phone" />
-          <h1 id="nav-fifty-two">50 TWO</h1>
+          <Link to='/store-details' className='styled-link'>
+            <PhoneInTalkOutlinedIcon id="navbar-phone" />
+          </Link>
+          <Link to='/#menu' className="styled-link">
+            <h1 id="nav-fifty-two">50 TWO</h1>
+          </Link>
           {navOpen ? (
-            <ClearIcon id='nav-clear-icon' onClick={() => changeBurgerState()} />
+              <ClearIcon id='nav-clear-icon' onClick={() => changeBurgerState()} />
             ) : (
             <MenuIcon
               id="hamburger-icon"
@@ -49,7 +50,6 @@ export default function NavBar(props) {
             </div>
           )}
         </div>
-      )}
     </div>
   )
 }

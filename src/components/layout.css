@@ -14,6 +14,8 @@ html {
 
   --lightGreenRGB: 113,119,68;
   --darkGreenRGB: 55,61,32;
+
+  --navHeight: 65px;
 }
 body {
   margin: 0;
