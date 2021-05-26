@@ -30,17 +30,17 @@
 }
 
 #nav-fifty-two {
-  margin: 0;
+  margin: auto;
   font-size: 35px;
   font-weight: 700;
   z-index: 4;
-  grid-column: 2 / 3;
   color: var(--primary);
   justify-self: center;
   align-self: center;
+  grid-column: 2 / 3;
   border: 5px solid var(--primary);
+  max-width: 210px;
 }
-
 .styled-link {
   margin: 0;
   padding: 0;
