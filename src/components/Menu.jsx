@@ -12,10 +12,11 @@ export default function Menu() {
         {menu.map((section) => {
           return (
             <>
+                <span id={`${section.title}`} className="menu__section--marker"></span>
                 <div className='banner'>
                   <div className='raised-title'>
-                  <h2 id={`${section.title}`}>{section.title}</h2>
-                </div>
+                    <h2 >{section.title}</h2>
+                  </div>
                 </div>
               <div className='menu-section'>
                 {section.items.map((item, index) => {
