@@ -19,7 +19,7 @@ const Map = () => {
   }
 
   return (
-    <div style={ size.width <= 992 ? { display: 'flex', width: '100%' } : { display: 'flex', width: '100%', flex: 2 }}>
+    <div id='map-conatiner' style={ size.width <= 992 ? { display: 'flex', width: '100%' } : { display: 'flex', width: '100%', flex: 2 }}>
       <LoadScript
         googleMapsApiKey={`${process.env.MAPKEY}`}>
         <GoogleMap

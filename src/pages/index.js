@@ -14,11 +14,7 @@ const IndexPage = () => {
     <SEO title="Home" />
     <body>
       <HeroPage />
-      {size.width > 1024 ? (
-        null
-      ) : (
         <NavBar setNavOpen={setNavOpen} navOpen={navOpen}/>
-      )}
       <main>
         <Menu />
       </main>

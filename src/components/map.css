@@ -1,5 +1,5 @@
 @media (min-width: 992px) {
-	div {
+	#map-conatiner {
 		justify-content: flex-end;
 	}
 }
