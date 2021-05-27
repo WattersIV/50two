@@ -20,7 +20,7 @@ main {
   flex-wrap: wrap;
   display: flex;
   justify-content: flex-start;
-  margin: 20px auto 50px;
+  margin: 0 auto 50px;
 }
 
 
@@ -70,9 +70,13 @@ main {
 }
 
 
-.menu-item h3 {
-  font-size: 18px;
-  font-weight: 700;
+.item .name-price {
+  font-size: 13px;
+}
+
+.item .name-description {
+  font-size: 13px;
+  font-weight: 300;
 }
 
 /* Needs to scales with number of columns according to vw */
