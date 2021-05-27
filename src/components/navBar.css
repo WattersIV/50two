@@ -6,13 +6,13 @@
   display: grid;
   grid-template-columns: 25% 50% 25%;
   top: 0;
-  z-index: 4;
+  z-index: 10;
 }
 
 #hamburger-icon {
   height: 50px;
   width: 50px;
-  z-index: 4;
+  z-index: 10;
   grid-column: 3 / 4;
   color: var(--primary);
   justify-self: center;
@@ -22,7 +22,7 @@
 #navbar-phone {
   height: 50px;
   width: 50px;
-  z-index: 4;
+  z-index: 10;
   grid-column: 1 / 2;
   color: var(--primary);
   justify-self: center;
@@ -33,7 +33,7 @@
   margin: auto;
   font-size: 35px;
   font-weight: 700;
-  z-index: 4;
+  z-index: 10;
   color: var(--primary);
   justify-self: center;
   align-self: center;
@@ -50,7 +50,7 @@
 #nav-clear-icon {
   height: 50px;
   width: 50px;
-  z-index: 4;
+  z-index: 10;
   grid-column: 3 / 4;
   color: var(--primary);
   justify-self: center;
@@ -71,7 +71,7 @@
   top: var(--navHeight);
   left: 0;
   background-color: var(--secondary);
-  z-index: 3;
+  z-index: 9;
 }
 
 .nav-item {

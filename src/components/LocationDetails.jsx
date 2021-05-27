@@ -1,6 +1,7 @@
 import React from 'react'
 import './locationDetails.css'
 import { Link } from "gatsby"
+import PhoneIcon from '@material-ui/icons/Phone';
 
 export default function LocationDetails() {
   return (
@@ -14,7 +15,9 @@ export default function LocationDetails() {
         <h3>Nepean, ON K2E 7W6</h3>
       </div>
       <div className='location__hours'>
-        <h3>(613) 723-2272</h3>
+        <PhoneIcon style={{ marginBottom: '-5px' }} />
+        {' '}
+        <h3 style={{ display: 'inline' }}>(613) 723-2272</h3>
       </div>
       <div className='location__phone'>
         <h2>HOURS</h2>
