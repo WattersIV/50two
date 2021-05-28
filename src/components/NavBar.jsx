@@ -22,10 +22,8 @@ export default function NavBar(props) {
               ? "/store-details"
               : `/#${item.title}`
               return (
-                <Link to={location} className={`large-nav__item large-nav__list--item${index}`} >
-                  <li key={`item-${item.title}`} className={`large-nav__item large-nav__list--item${index}`}>
-                    {item.title}
-                  </li>
+                <Link to={location} className={`large-nav__item large-nav__list--item${index}`} key={`item-${item.title}`} >
+                  {item.title}
                 </Link>
               )
             })}
