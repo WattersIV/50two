@@ -10,7 +10,7 @@ const Map = () => {
     width: "1000px",
   };
   const largeMapStyles = {
-    height: "400px",
+    height: "500px",
     width: "100%",
   }
 
