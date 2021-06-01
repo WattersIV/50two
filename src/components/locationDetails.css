@@ -44,6 +44,14 @@ h3 {
   margin-top: 30px;
 }
 
+.location__hours--item {
+  display: inline-block;
+}
+
+.location__hours--day {
+  min-width: 100px;
+}
+
 .location__phone {
   margin-top: 30px;
 }

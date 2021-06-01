@@ -131,3 +131,44 @@ export const navItems = [
     title: 'Store Details',
   },
 ]
+
+export const storeHours = [
+  {
+    day: 'Sunday',
+    isOpen: false
+  },
+  {
+    day: 'Monday',
+    isOpen: true,
+    startHour: '8:00 AM',
+    endHour: '3:00 PM'
+  },
+  {
+    day: 'Tuesday',
+    isOpen: true,
+    startHour: '8:00 AM',
+    endHour: '3:00 PM'
+  },
+  {
+    day: 'Wednesday',
+    isOpen: true,
+    startHour: '8:00 AM',
+    endHour: '3:00 PM'
+  },
+  {
+    day: 'Thurday',
+    isOpen: true,
+    startHour: '8:00 AM',
+    endHour: '3:00 PM'
+  },
+  {
+    day: 'Friday',
+    isOpen: true,
+    startHour: '8:00 AM',
+    endHour: '3:00 PM'
+  },
+  {
+    day: 'Saturday',
+    isOpen: false
+  },
+]

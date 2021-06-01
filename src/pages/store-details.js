@@ -14,10 +14,8 @@ const StoreDetails = () => {
     <Layout>
       <SEO title="Store Details" />
       <body id="store-details-body">
-        {size.width > 1024 ? null : (
-          <NavBar setNavOpen={setNavOpen} navOpen={navOpen} />
-        )}
-        <div className="details-container" style={{ marginTop: 'var(--navHeight)' }} >
+      <NavBar setNavOpen={setNavOpen} navOpen={navOpen}/>
+        <div className="details-container" style={{ marginTop: 'calc(var(--navHeight) + 40px' }} >
           <Map />
           <LocationDetails />
         </div>

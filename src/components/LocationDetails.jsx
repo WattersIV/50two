@@ -2,6 +2,7 @@ import React from 'react'
 import './locationDetails.css'
 import { Link } from "gatsby"
 import PhoneIcon from '@material-ui/icons/Phone';
+import { storeHours } from '../menu'
 
 export default function LocationDetails() {
   return (
@@ -21,13 +22,25 @@ export default function LocationDetails() {
       </div>
       <div className='location__phone'>
         <h2>HOURS</h2>
-        <h3>Monday-Friday 8am-3pm</h3>
+        {storeHours.map((item) => {
+          const hours = item.isOpen ? `${item.startHour} - ${item.endHour}` : 'CLOSED'
+          return (
+            <div>
+              <h3 key={item.day} className='location__hours--item location__hours--day'>
+                {item.day} {' '}
+              </h3>
+              <h3 key={item.day} className='location__hours--item'>
+                {hours}
+              </h3>
+            </div>
+          )
+        })}
       </div>
-    <Link to='/#menu'>
-      <button className='button menu-button'>
-        See Menu
+      <Link to='/#menu'>
+        <button className='button menu-button'>
+          See Menu
       </button>
-    </Link>
+      </Link>
     </div>
   )
 }
