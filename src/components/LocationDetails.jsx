@@ -5,6 +5,7 @@ import PhoneIcon from '@material-ui/icons/Phone';
 import { storeHours } from '../menu'
 
 export default function LocationDetails() {
+  
   return (
     <div className='location'>
       <div className='location__city'>

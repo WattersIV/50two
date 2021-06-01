@@ -85,4 +85,7 @@ h3 {
   .menu-button {
     width: 80% 
   }
+  .location {
+    margin-top: 0;
+  }
 }
