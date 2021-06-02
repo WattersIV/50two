@@ -19,6 +19,8 @@ const StoreDetails = () => {
           <Map />
           <LocationDetails />
         </div>
+        {/* Next add a gallery 
+        <Gallery /> */}
       </body>
     </Layout>
   )
