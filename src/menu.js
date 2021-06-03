@@ -117,13 +117,32 @@ export const addons = [
   }
 ]
 
-export const navItems = [
+export const navItemsDesktop = [
   {
     title: 'Breakfast',
   },
   { 
     title: 'Lunch'
   }
+]
+
+export const navItems = [
+  {
+    title: 'Breakfast',
+    location: '/#Breakfast'
+  },
+  { 
+    title: 'Lunch',
+    location: '/#Lunch'
+  },
+  {
+    title: 'Hours & Location',
+    location: '/store-details'
+  },
+  {
+    title: 'Gallery',
+    location: '/store-details#Gallery'
+  },
 ]
 
 export const menuDropDownItems = [

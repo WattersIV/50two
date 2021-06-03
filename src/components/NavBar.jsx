@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import "./navBar.css"
-import { menu, navItems, menuDropDownItems, storeDropDownItems } from "../menu"
+import { menu, navItems, menuDropDownItems, storeDropDownItems, navItemsDesktop } from "../menu"
 import { Link } from "gatsby"
 import PhoneInTalkOutlinedIcon from "@material-ui/icons/PhoneInTalkOutlined"
 import MenuIcon from "@material-ui/icons/Menu"
@@ -44,7 +44,7 @@ export default function NavBar(props) {
             )}
             </div>
             
-            {navItems.map((item, index) => {
+            {navItemsDesktop.map((item, index) => {
               const location = `/#${item.title}`
               return (
                 <Link to={location} className={`large-nav__item large-nav__list--item${index + 1}`} key={`item-${item.title}`} >
@@ -102,12 +102,9 @@ export default function NavBar(props) {
             )}
             {navOpen && (
               <div className="nav-dropdown">
-                <ul >
+                <ul style={{ margin: 0 }}>
                   {navItems.map(item => {
-                    const location =
-                      item.title === "Store Details"
-                        ? "/store-details"
-                        : `/#${item.title}`
+                    const location = item.location
                     return (
                       <Link to={location} className="nav-item">
                         <li key={`item-${item.title}`} className="nav-item">
