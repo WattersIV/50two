@@ -4,6 +4,7 @@ import NavBar from "../components/NavBar"
 import Map from "../components/Map"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Gallery from "../components/Gallery"
 import LocationDetails from "../components/LocationDetails"
 import "../components/store-details.css"
 
@@ -19,8 +20,7 @@ const StoreDetails = () => {
           <Map />
           <LocationDetails />
         </div>
-        {/* Next add a gallery 
-        <Gallery /> */}
+        <Gallery />
       </body>
     </Layout>
   )
