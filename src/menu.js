@@ -123,10 +123,7 @@ export const navItems = [
   },
   { 
     title: 'Lunch'
-  },
-  {
-    title: 'Store Details',
-  },
+  }
 ]
 
 export const menuDropDownItems = [
@@ -139,6 +136,15 @@ export const menuDropDownItems = [
   {
     title: 'Addons',
   },
+]
+
+export const storeDropDownItems = [
+  {
+    title: 'Hours & Location'
+  },
+  {
+    title: 'Gallery'
+  }
 ]
 
 export const storeHours = [

@@ -12,7 +12,7 @@ const desktopStyles = {
 export default function Gallery () {
     const size = useWindowSize()
     return (
-    <div style={size.width > 992 ? 
+    <div id='Gallery' style={size.width > 992 ? 
         desktopStyles :
         {}
         }>

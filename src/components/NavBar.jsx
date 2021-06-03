@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import "./navBar.css"
-import { menu, navItems, menuDropDownItems } from "../menu"
+import { menu, navItems, menuDropDownItems, storeDropDownItems } from "../menu"
 import { Link } from "gatsby"
 import PhoneInTalkOutlinedIcon from "@material-ui/icons/PhoneInTalkOutlined"
 import MenuIcon from "@material-ui/icons/Menu"
@@ -9,6 +9,7 @@ import ClearIcon from '@material-ui/icons/Clear';
 export default function NavBar(props) {
   const { navOpen, setNavOpen } = props
   const [menuDropdown, setMenuDropDown] = useState(false) 
+  const [storeDropdown, setStoreDropDown] = useState(false)
   const size = useWindowSize()
   const changeBurgerState = () => {
     setNavOpen(!navOpen)
@@ -42,17 +43,42 @@ export default function NavBar(props) {
               </div>
             )}
             </div>
+            
             {navItems.map((item, index) => {
-              const location =
-              item.title === "Store Details"
-              ? "/store-details"
-              : `/#${item.title}`
+              const location = `/#${item.title}`
               return (
                 <Link to={location} className={`large-nav__item large-nav__list--item${index + 1}`} key={`item-${item.title}`} >
                   {item.title}
                 </Link>
               )
             })}
+            <div 
+              className='large-nav__item large-nav__list--item3'
+              onMouseEnter={() => setStoreDropDown(true)} 
+              >
+                Store
+            {storeDropdown && (
+              <div className='store-dropdown'>
+                <ul
+                style={{ margin: 0 }}
+                onMouseLeave={() => setStoreDropDown(false)}
+                >
+                  {storeDropDownItems.map((item) => {
+                    const location = item === 'Store Details' ? 
+                    '/store-details' :
+                    `/store-details#${item.title}` 
+                    return (
+                      <Link to={location}>
+                      <li key={`item-${item.title}`} className="menu-dropdown__item">
+                        {item.title}
+                      </li>
+                    </Link>
+                    )
+                  })}
+                </ul>
+              </div>
+            )}
+            </div>
             <Link to='/#menu' className="styled-link" id='large-nav--logo'>
               <h1 id="nav-fifty-two">50 TWO</h1>
             </Link>
