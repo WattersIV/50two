@@ -1,6 +1,6 @@
 import React from 'react'
 import './menu.css'
-import { menu, addons } from '../menu'
+import { menu, addons } from '../../../menu'
 
 
 export default function Menu() {

@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import NavBar from "../components/NavBar"
-import Map from "../components/Map"
+import Map from "../components/store-details/map/Map"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Gallery from "../components/Gallery"
+import Gallery from "../components/store-details/gallery/Gallery"
 import LocationDetails from "../components/LocationDetails"
 import "../components/store-details.css"
 
