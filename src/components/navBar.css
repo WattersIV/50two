@@ -58,6 +58,22 @@
   align-self: center;
 }
 
+.menu-dropdown {
+  position: fixed;
+  top: var(--navHeight);
+  left: 0;
+  background-color: var(--secondary);
+  z-index: 9;
+  width: calc(100vw / 5);
+  animation: growDown 300ms ease-in-out forwards;
+}
+
+.menu-dropdown__item {
+  list-style-type: none;
+  text-decoration: none;
+  color: var(--primary);
+}
+
 @media (min-width: 1000px) {
   .large-nav {
     height: var(--navHeight);

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import "./navBar.css"
-import { menu, navItems } from "../menu"
+import { menu, navItems, menuDropDownItems } from "../menu"
 import { Link } from "gatsby"
 import PhoneInTalkOutlinedIcon from "@material-ui/icons/PhoneInTalkOutlined"
 import MenuIcon from "@material-ui/icons/Menu"
@@ -8,6 +8,7 @@ import ClearIcon from '@material-ui/icons/Clear';
 
 export default function NavBar(props) {
   const { navOpen, setNavOpen } = props
+  const [menuDropdown, setMenuDropDown] = useState(false) 
   const size = useWindowSize()
   const changeBurgerState = () => {
     setNavOpen(!navOpen)
@@ -16,13 +17,38 @@ export default function NavBar(props) {
     <div >
           {size.width >= 1000 ? (
             <div className='large-nav'>
+              <div 
+              className='large-nav__item large-nav__list--item0'
+              onMouseEnter={() => setMenuDropDown(true)} 
+              >
+                Menu
+            {menuDropdown && (
+              <div className='menu-dropdown'>
+                <ul
+                style={{ margin: 0 }}
+                onMouseLeave={() => setMenuDropDown(false)}
+                >
+                  {menuDropDownItems.map((item) => {
+                    const location = `/#${item.title}`
+                    return (
+                      <Link to={location}>
+                      <li key={`item-${item.title}`} className="menu-dropdown__item">
+                        {item.title}
+                      </li>
+                    </Link>
+                    )
+                  })}
+                </ul>
+              </div>
+            )}
+            </div>
             {navItems.map((item, index) => {
               const location =
               item.title === "Store Details"
               ? "/store-details"
               : `/#${item.title}`
               return (
-                <Link to={location} className={`large-nav__item large-nav__list--item${index}`} key={`item-${item.title}`} >
+                <Link to={location} className={`large-nav__item large-nav__list--item${index + 1}`} key={`item-${item.title}`} >
                   {item.title}
                 </Link>
               )
@@ -50,7 +76,7 @@ export default function NavBar(props) {
             )}
             {navOpen && (
               <div className="nav-dropdown">
-                <ul style={{ margin: "15px 0 15px 0" }}>
+                <ul >
                   {navItems.map(item => {
                     const location =
                       item.title === "Store Details"

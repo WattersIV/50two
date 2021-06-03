@@ -121,14 +121,23 @@ export const navItems = [
   {
     title: 'Breakfast',
   },
-  {
-    title: 'Lunch',
-  },
   { 
-    title: 'Addons'
+    title: 'Lunch'
   },
   {
     title: 'Store Details',
+  },
+]
+
+export const menuDropDownItems = [
+  {
+    title: 'Breakfast',
+  },
+  { 
+    title: 'Lunch'
+  },
+  {
+    title: 'Addons',
   },
 ]
 
