@@ -4,8 +4,12 @@ import { Carousel } from 'react-responsive-carousel'
 import EggImg from '../images/breakfast.jpg'
 
 const desktopStyles = {
-    maxWidth: '1200px',
-    margin: '20px auto 0 auto',
+  maxWidth: '1200px',
+  margin: '20px auto 0 auto',
+}
+
+const mobileStyles = {
+  marginTop: '25px',
 }
 
 
@@ -14,7 +18,7 @@ export default function Gallery () {
     return (
     <div id='Gallery' style={size.width > 992 ? 
         desktopStyles :
-        {}
+        mobileStyles
         }>
         <Carousel 
         useKeyboardArrows={true}
